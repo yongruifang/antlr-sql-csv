@@ -1,0 +1,9 @@
+{
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "antlr4.generation": {
+        "mode": "external",
+        "package": "com.example.antlr4",
+        "listeners": false,
+        "visitors": true
+    }
+}
