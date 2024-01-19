@@ -48,7 +48,7 @@ FROM: 'FROM';
 
 fragment DIGIT: [0-9];
 
-fragment LETTER: [A-Z];
+fragment LETTER: [A-Z]| [a-z];
 
 IDENTIFIER: (LETTER | '_') (LETTER | DIGIT | '_' | '@' | ':')*;
 

@@ -44,4 +44,12 @@
         </plugins>
     </build>
 ```
+> 补充：TestRig
+```bash
+demo > java -cp "D:/component/antlr/antlr-4.13.0-complete.jar;target/classes" org.antlr.v4.gui.TestRig com.example.antlr4.SqlBase singleStatement -gui
+SELECT name, age FROM employees
+^Z
+```
+![select](./png/SqlBase-select.png)
+
 2. TODO: 基于Visitor模式处理业务逻辑
