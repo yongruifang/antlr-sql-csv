@@ -5,5 +5,11 @@
         "package": "com.example.antlr4",
         "listeners": false,
         "visitors": true
-    }
+    },
+    "maven.terminal.customEnv": [
+        {
+            "environmentVariable": "MAVEN_OPTS",
+            "value": "-Dfile.encoding=UTF-8"
+        }
+    ]
 }
