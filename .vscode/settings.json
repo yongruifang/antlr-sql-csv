@@ -1,8 +1,5 @@
 {
     "antlr4.generation": {
-        "mode": "external",
-        "listeners": false,
-        "visitors": true,
-        "language": "TypeScript",
+        "mode": "none"
     }
 }

@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  antlr4ts:
+    specifier: 0.5.0-alpha.4
+    version: registry.npmmirror.com/antlr4ts@0.5.0-alpha.4
+
 devDependencies:
   cz-conventional-changelog:
     specifier: ^3.3.0
@@ -173,6 +178,12 @@ packages:
     dependencies:
       color-convert: registry.npmmirror.com/color-convert@2.0.1
     dev: true
+
+  registry.npmmirror.com/antlr4ts@0.5.0-alpha.4:
+    resolution: {integrity: sha512-WPQDt1B74OfPv/IMS2ekXAKkTZIHl88uMetg6q3OTqgFxZ/dxDXI0EWLyZid/1Pe6hTftyg5N7gel5wNAGxXyQ==, tarball: https://registry.npmmirror.com/antlr4ts/-/antlr4ts-0.5.0-alpha.4.tgz}
+    name: antlr4ts
+    version: 0.5.0-alpha.4
+    dev: false
 
   registry.npmmirror.com/argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==, tarball: https://registry.npmmirror.com/argparse/-/argparse-2.0.1.tgz}

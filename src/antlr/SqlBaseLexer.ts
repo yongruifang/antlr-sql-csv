@@ -1,96 +1,118 @@
-// Generated from c:/Users/Pondsi/Desktop/sandbox/antlr-sql-csv/src/antlr/SqlBase.g4 by ANTLR 4.13.1
-
-import * as antlr from "antlr4ng";
-import { Token } from "antlr4ng";
+// Generated from src/antlr/SqlBase.g4 by ANTLR 4.9.0-SNAPSHOT
 
 
-export class SqlBaseLexer extends antlr.Lexer {
-    public static readonly T__0 = 1;
-    public static readonly T__1 = 2;
-    public static readonly SELECT = 3;
-    public static readonly FROM = 4;
-    public static readonly IDENTIFIER = 5;
-    public static readonly WS = 6;
-    public static readonly UNRECOGNIZED = 7;
+import { ATN } from "antlr4ts/atn/ATN";
+import { ATNDeserializer } from "antlr4ts/atn/ATNDeserializer";
+import { CharStream } from "antlr4ts/CharStream";
+import { Lexer } from "antlr4ts/Lexer";
+import { LexerATNSimulator } from "antlr4ts/atn/LexerATNSimulator";
+import { NotNull } from "antlr4ts/Decorators";
+import { Override } from "antlr4ts/Decorators";
+import { RuleContext } from "antlr4ts/RuleContext";
+import { Vocabulary } from "antlr4ts/Vocabulary";
+import { VocabularyImpl } from "antlr4ts/VocabularyImpl";
 
-    public static readonly channelNames = [
-        "DEFAULT_TOKEN_CHANNEL", "HIDDEN"
-    ];
-
-    public static readonly literalNames = [
-        null, "','", "'.'", "'SELECT'", "'FROM'"
-    ];
-
-    public static readonly symbolicNames = [
-        null, null, null, "SELECT", "FROM", "IDENTIFIER", "WS", "UNRECOGNIZED"
-    ];
-
-    public static readonly modeNames = [
-        "DEFAULT_MODE",
-    ];
-
-    public static readonly ruleNames = [
-        "T__0", "T__1", "SELECT", "FROM", "DIGIT", "LETTER", "IDENTIFIER", 
-        "WS", "UNRECOGNIZED",
-    ];
+import * as Utils from "antlr4ts/misc/Utils";
 
 
-    public constructor(input: antlr.CharStream) {
-        super(input);
-        this.interpreter = new antlr.LexerATNSimulator(this, SqlBaseLexer._ATN, SqlBaseLexer.decisionsToDFA, new antlr.PredictionContextCache());
-    }
+export class SqlBaseLexer extends Lexer {
+	public static readonly T__0 = 1;
+	public static readonly T__1 = 2;
+	public static readonly SELECT = 3;
+	public static readonly FROM = 4;
+	public static readonly IDENTIFIER = 5;
+	public static readonly WS = 6;
+	public static readonly UNRECOGNIZED = 7;
 
-    public get grammarFileName(): string { return "SqlBase.g4"; }
+	// tslint:disable:no-trailing-whitespace
+	public static readonly channelNames: string[] = [
+		"DEFAULT_TOKEN_CHANNEL", "HIDDEN",
+	];
 
-    public get literalNames(): (string | null)[] { return SqlBaseLexer.literalNames; }
-    public get symbolicNames(): (string | null)[] { return SqlBaseLexer.symbolicNames; }
-    public get ruleNames(): string[] { return SqlBaseLexer.ruleNames; }
+	// tslint:disable:no-trailing-whitespace
+	public static readonly modeNames: string[] = [
+		"DEFAULT_MODE",
+	];
 
-    public get serializedATN(): number[] { return SqlBaseLexer._serializedATN; }
+	public static readonly ruleNames: string[] = [
+		"T__0", "T__1", "SELECT", "FROM", "DIGIT", "LETTER", "IDENTIFIER", "WS", 
+		"UNRECOGNIZED",
+	];
 
-    public get channelNames(): string[] { return SqlBaseLexer.channelNames; }
+	private static readonly _LITERAL_NAMES: Array<string | undefined> = [
+		undefined, "','", "'.'", "'SELECT'", "'FROM'",
+	];
+	private static readonly _SYMBOLIC_NAMES: Array<string | undefined> = [
+		undefined, undefined, undefined, "SELECT", "FROM", "IDENTIFIER", "WS", 
+		"UNRECOGNIZED",
+	];
+	public static readonly VOCABULARY: Vocabulary = new VocabularyImpl(SqlBaseLexer._LITERAL_NAMES, SqlBaseLexer._SYMBOLIC_NAMES, []);
 
-    public get modeNames(): string[] { return SqlBaseLexer.modeNames; }
-
-    public static readonly _serializedATN: number[] = [
-        4,0,7,61,6,-1,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,
-        6,7,6,2,7,7,7,2,8,7,8,1,0,1,0,1,1,1,1,1,2,1,2,1,2,1,2,1,2,1,2,1,
-        2,1,3,1,3,1,3,1,3,1,3,1,4,1,4,1,5,3,5,39,8,5,1,6,1,6,3,6,43,8,6,
-        1,6,1,6,1,6,5,6,48,8,6,10,6,12,6,51,9,6,1,7,4,7,54,8,7,11,7,12,7,
-        55,1,7,1,7,1,8,1,8,0,0,9,1,1,3,2,5,3,7,4,9,0,11,0,13,5,15,6,17,7,
-        1,0,4,1,0,48,57,2,0,65,90,97,122,3,0,58,58,64,64,95,95,3,0,9,10,
-        13,13,32,32,63,0,1,1,0,0,0,0,3,1,0,0,0,0,5,1,0,0,0,0,7,1,0,0,0,0,
-        13,1,0,0,0,0,15,1,0,0,0,0,17,1,0,0,0,1,19,1,0,0,0,3,21,1,0,0,0,5,
-        23,1,0,0,0,7,30,1,0,0,0,9,35,1,0,0,0,11,38,1,0,0,0,13,42,1,0,0,0,
-        15,53,1,0,0,0,17,59,1,0,0,0,19,20,5,44,0,0,20,2,1,0,0,0,21,22,5,
-        46,0,0,22,4,1,0,0,0,23,24,5,83,0,0,24,25,5,69,0,0,25,26,5,76,0,0,
-        26,27,5,69,0,0,27,28,5,67,0,0,28,29,5,84,0,0,29,6,1,0,0,0,30,31,
-        5,70,0,0,31,32,5,82,0,0,32,33,5,79,0,0,33,34,5,77,0,0,34,8,1,0,0,
-        0,35,36,7,0,0,0,36,10,1,0,0,0,37,39,7,1,0,0,38,37,1,0,0,0,39,12,
-        1,0,0,0,40,43,3,11,5,0,41,43,5,95,0,0,42,40,1,0,0,0,42,41,1,0,0,
-        0,43,49,1,0,0,0,44,48,3,11,5,0,45,48,3,9,4,0,46,48,7,2,0,0,47,44,
-        1,0,0,0,47,45,1,0,0,0,47,46,1,0,0,0,48,51,1,0,0,0,49,47,1,0,0,0,
-        49,50,1,0,0,0,50,14,1,0,0,0,51,49,1,0,0,0,52,54,7,3,0,0,53,52,1,
-        0,0,0,54,55,1,0,0,0,55,53,1,0,0,0,55,56,1,0,0,0,56,57,1,0,0,0,57,
-        58,6,7,0,0,58,16,1,0,0,0,59,60,9,0,0,0,60,18,1,0,0,0,6,0,38,42,47,
-        49,55,1,0,1,0
-    ];
-
-    private static __ATN: antlr.ATN;
-    public static get _ATN(): antlr.ATN {
-        if (!SqlBaseLexer.__ATN) {
-            SqlBaseLexer.__ATN = new antlr.ATNDeserializer().deserialize(SqlBaseLexer._serializedATN);
-        }
-
-        return SqlBaseLexer.__ATN;
-    }
+	// @Override
+	// @NotNull
+	public get vocabulary(): Vocabulary {
+		return SqlBaseLexer.VOCABULARY;
+	}
+	// tslint:enable:no-trailing-whitespace
 
 
-    private static readonly vocabulary = new antlr.Vocabulary(SqlBaseLexer.literalNames, SqlBaseLexer.symbolicNames, []);
+	constructor(input: CharStream) {
+		super(input);
+		this._interp = new LexerATNSimulator(SqlBaseLexer._ATN, this);
+	}
 
-    public override get vocabulary(): antlr.Vocabulary {
-        return SqlBaseLexer.vocabulary;
-    }
+	// @Override
+	public get grammarFileName(): string { return "SqlBase.g4"; }
 
-    private static readonly decisionsToDFA = SqlBaseLexer._ATN.decisionToState.map( (ds: antlr.DecisionState, index: number) => new antlr.DFA(ds, index) );
+	// @Override
+	public get ruleNames(): string[] { return SqlBaseLexer.ruleNames; }
+
+	// @Override
+	public get serializedATN(): string { return SqlBaseLexer._serializedATN; }
+
+	// @Override
+	public get channelNames(): string[] { return SqlBaseLexer.channelNames; }
+
+	// @Override
+	public get modeNames(): string[] { return SqlBaseLexer.modeNames; }
+
+	public static readonly _serializedATN: string =
+		"\x03\uC91D\uCABA\u058D\uAFBA\u4F53\u0607\uEA8B\uC241\x02\t?\b\x01\x04" +
+		"\x02\t\x02\x04\x03\t\x03\x04\x04\t\x04\x04\x05\t\x05\x04\x06\t\x06\x04" +
+		"\x07\t\x07\x04\b\t\b\x04\t\t\t\x04\n\t\n\x03\x02\x03\x02\x03\x03\x03\x03" +
+		"\x03\x04\x03\x04\x03\x04\x03\x04\x03\x04\x03\x04\x03\x04\x03\x05\x03\x05" +
+		"\x03\x05\x03\x05\x03\x05\x03\x06\x03\x06\x03\x07\x05\x07)\n\x07\x03\b" +
+		"\x03\b\x05\b-\n\b\x03\b\x03\b\x03\b\x07\b2\n\b\f\b\x0E\b5\v\b\x03\t\x06" +
+		"\t8\n\t\r\t\x0E\t9\x03\t\x03\t\x03\n\x03\n\x02\x02\x02\v\x03\x02\x03\x05" +
+		"\x02\x04\x07\x02\x05\t\x02\x06\v\x02\x02\r\x02\x02\x0F\x02\x07\x11\x02" +
+		"\b\x13\x02\t\x03\x02\x06\x03\x022;\x04\x02C\\c|\x05\x02<<BBaa\x05\x02" +
+		"\v\f\x0F\x0F\"\"\x02A\x02\x03\x03\x02\x02\x02\x02\x05\x03\x02\x02\x02" +
+		"\x02\x07\x03\x02\x02\x02\x02\t\x03\x02\x02\x02\x02\x0F\x03\x02\x02\x02" +
+		"\x02\x11\x03\x02\x02\x02\x02\x13\x03\x02\x02\x02\x03\x15\x03\x02\x02\x02" +
+		"\x05\x17\x03\x02\x02\x02\x07\x19\x03\x02\x02\x02\t \x03\x02\x02\x02\v" +
+		"%\x03\x02\x02\x02\r(\x03\x02\x02\x02\x0F,\x03\x02\x02\x02\x117\x03\x02" +
+		"\x02\x02\x13=\x03\x02\x02\x02\x15\x16\x07.\x02\x02\x16\x04\x03\x02\x02" +
+		"\x02\x17\x18\x070\x02\x02\x18\x06\x03\x02\x02\x02\x19\x1A\x07U\x02\x02" +
+		"\x1A\x1B\x07G\x02\x02\x1B\x1C\x07N\x02\x02\x1C\x1D\x07G\x02\x02\x1D\x1E" +
+		"\x07E\x02\x02\x1E\x1F\x07V\x02\x02\x1F\b\x03\x02\x02\x02 !\x07H\x02\x02" +
+		"!\"\x07T\x02\x02\"#\x07Q\x02\x02#$\x07O\x02\x02$\n\x03\x02\x02\x02%&\t" +
+		"\x02\x02\x02&\f\x03\x02\x02\x02\')\t\x03\x02\x02(\'\x03\x02\x02\x02)\x0E" +
+		"\x03\x02\x02\x02*-\x05\r\x07\x02+-\x07a\x02\x02,*\x03\x02\x02\x02,+\x03" +
+		"\x02\x02\x02-3\x03\x02\x02\x02.2\x05\r\x07\x02/2\x05\v\x06\x0202\t\x04" +
+		"\x02\x021.\x03\x02\x02\x021/\x03\x02\x02\x0210\x03\x02\x02\x0225\x03\x02" +
+		"\x02\x0231\x03\x02\x02\x0234\x03\x02\x02\x024\x10\x03\x02\x02\x0253\x03" +
+		"\x02\x02\x0268\t\x05\x02\x0276\x03\x02\x02\x0289\x03\x02\x02\x0297\x03" +
+		"\x02\x02\x029:\x03\x02\x02\x02:;\x03\x02\x02\x02;<\b\t\x02\x02<\x12\x03" +
+		"\x02\x02\x02=>\v\x02\x02\x02>\x14\x03\x02\x02\x02\b\x02(,139\x03\x02\x03" +
+		"\x02";
+	public static __ATN: ATN;
+	public static get _ATN(): ATN {
+		if (!SqlBaseLexer.__ATN) {
+			SqlBaseLexer.__ATN = new ATNDeserializer().deserialize(Utils.toCharArray(SqlBaseLexer._serializedATN));
+		}
+
+		return SqlBaseLexer.__ATN;
+	}
+
 }
+
