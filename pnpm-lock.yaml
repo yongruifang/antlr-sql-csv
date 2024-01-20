@@ -8,8 +8,17 @@ dependencies:
   antlr4ts:
     specifier: 0.5.0-alpha.4
     version: registry.npmmirror.com/antlr4ts@0.5.0-alpha.4
+  csvtojson:
+    specifier: ^2.0.10
+    version: registry.npmmirror.com/csvtojson@2.0.10
 
 devDependencies:
+  '@types/csvtojson':
+    specifier: ^2.0.0
+    version: registry.npmmirror.com/@types/csvtojson@2.0.0
+  '@types/node':
+    specifier: ^20.11.5
+    version: registry.npmmirror.com/@types/node@20.11.5
   cz-conventional-changelog:
     specifier: ^3.3.0
     version: registry.npmmirror.com/cz-conventional-changelog@3.3.0(@types/node@20.11.5)(typescript@5.3.3)
@@ -181,6 +190,15 @@ packages:
     version: 1.0.4
     dev: true
 
+  registry.npmmirror.com/@types/csvtojson@2.0.0:
+    resolution: {integrity: sha512-F7jFwbbA/V2OKM1VhZccjC+/eeZISvWyqGmhFS9A44jQp3RimDleNYngG+DvCgHjM2EjHwgQe0qqpgDhTqsa7Q==, tarball: https://registry.npmmirror.com/@types/csvtojson/-/csvtojson-2.0.0.tgz}
+    name: '@types/csvtojson'
+    version: 2.0.0
+    deprecated: This is a stub types definition. csvtojson provides its own type definitions, so you do not need this installed.
+    dependencies:
+      csvtojson: registry.npmmirror.com/csvtojson@2.0.10
+    dev: true
+
   registry.npmmirror.com/@types/node@20.11.5:
     resolution: {integrity: sha512-g557vgQjUUfN76MZAN/dt1z3dzcUsimuysco0KeluHgrPdJXkP/XdAURgyO2W9fZWHRtRBiVKzKn8vyOAwlG+w==, tarball: https://registry.npmmirror.com/@types/node/-/node-20.11.5.tgz}
     name: '@types/node'
@@ -299,6 +317,11 @@ packages:
       inherits: registry.npmmirror.com/inherits@2.0.4
       readable-stream: registry.npmmirror.com/readable-stream@3.6.2
     dev: true
+
+  registry.npmmirror.com/bluebird@3.7.2:
+    resolution: {integrity: sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==, tarball: https://registry.npmmirror.com/bluebird/-/bluebird-3.7.2.tgz}
+    name: bluebird
+    version: 3.7.2
 
   registry.npmmirror.com/brace-expansion@1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==, tarball: https://registry.npmmirror.com/brace-expansion/-/brace-expansion-1.1.11.tgz}
@@ -515,6 +538,17 @@ packages:
     name: create-require
     version: 1.1.1
     dev: true
+
+  registry.npmmirror.com/csvtojson@2.0.10:
+    resolution: {integrity: sha512-lUWFxGKyhraKCW8Qghz6Z0f2l/PqB1W3AO0HKJzGIQ5JRSlR651ekJDiGJbBT4sRNNv5ddnSGVEnsxP9XRCVpQ==, tarball: https://registry.npmmirror.com/csvtojson/-/csvtojson-2.0.10.tgz}
+    name: csvtojson
+    version: 2.0.10
+    engines: {node: '>=4.0.0'}
+    hasBin: true
+    dependencies:
+      bluebird: registry.npmmirror.com/bluebird@3.7.2
+      lodash: registry.npmmirror.com/lodash@4.17.21
+      strip-bom: registry.npmmirror.com/strip-bom@2.0.0
 
   registry.npmmirror.com/cz-conventional-changelog@3.3.0(@types/node@20.11.5)(typescript@5.3.3):
     resolution: {integrity: sha512-U466fIzU5U22eES5lTNiNbZ+d8dfcHcssH4o7QsdWaCcRs/feIPCxKYSWkYBNs5mny7MvEfwpTLWjvbm94hecw==, tarball: https://registry.npmmirror.com/cz-conventional-changelog/-/cz-conventional-changelog-3.3.0.tgz}
@@ -890,7 +924,6 @@ packages:
     resolution: {integrity: sha512-rMYPYvCzsXywIsldgLaSoPlw5PfoB/ssr7hY4pLfcodrA5M/eArza1a9VmTiNIBNMjOGr1Ow9mTyU2o69U6U9Q==, tarball: https://registry.npmmirror.com/is-utf8/-/is-utf8-0.2.1.tgz}
     name: is-utf8
     version: 0.2.1
-    dev: true
 
   registry.npmmirror.com/is-windows@1.0.2:
     resolution: {integrity: sha512-eXK1UInq2bPmjyX6e3VHIzMLobc4J94i4AWn+Hpq3OU5KkrRC96OAcR3PRJ/pGu6m8TRnBHP9dkXQVsT/COVIA==, tarball: https://registry.npmmirror.com/is-windows/-/is-windows-1.0.2.tgz}
@@ -1009,7 +1042,6 @@ packages:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==, tarball: https://registry.npmmirror.com/lodash/-/lodash-4.17.21.tgz}
     name: lodash
     version: 4.17.21
-    dev: true
 
   registry.npmmirror.com/log-symbols@4.1.0:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==, tarball: https://registry.npmmirror.com/log-symbols/-/log-symbols-4.1.0.tgz}
@@ -1311,6 +1343,14 @@ packages:
     dependencies:
       ansi-regex: registry.npmmirror.com/ansi-regex@5.0.1
     dev: true
+
+  registry.npmmirror.com/strip-bom@2.0.0:
+    resolution: {integrity: sha512-kwrX1y7czp1E69n2ajbG65mIo9dqvJ+8aBQXOGVxqwvNbsXdFM6Lq37dLAY3mknUwru8CfcCbfOLL/gMo+fi3g==, tarball: https://registry.npmmirror.com/strip-bom/-/strip-bom-2.0.0.tgz}
+    name: strip-bom
+    version: 2.0.0
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      is-utf8: registry.npmmirror.com/is-utf8@0.2.1
 
   registry.npmmirror.com/strip-bom@4.0.0:
     resolution: {integrity: sha512-3xurFv5tEgii33Zi8Jtp55wEIILR9eh34FAW00PZf+JnSsTmV/ioewSgQl97JHvgjoRGwPShsWm+IdrxB35d0w==, tarball: https://registry.npmmirror.com/strip-bom/-/strip-bom-4.0.0.tgz}
