@@ -8,7 +8,7 @@ import org.antlr.v4.runtime.ParserRuleContext;
 import com.example.antlr4.SqlBaseLexer;
 import com.example.antlr4.SqlBaseParser;
 import com.example.parser.AstVisitor;
-import com.example.tree.Node;
+import com.example.tree.basic.Node;
 
 class App {
     public static void main(String[] args) throws IOException {

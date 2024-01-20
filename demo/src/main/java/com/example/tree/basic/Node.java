@@ -1,4 +1,4 @@
-package com.example.tree;
+package com.example.tree.basic;
 
 import java.util.List;
 
