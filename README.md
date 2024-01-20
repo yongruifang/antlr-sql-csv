@@ -51,5 +51,20 @@ SELECT name, age FROM employees
 ^Z
 ```
 ![select](./png/SqlBase-select.png)
+> 补充: [Alternative Labels](https://github.com/antlr/antlr4/blob/master/doc/parser-rules.md#alternative-labels)
+规则中的所有子规则要么全标记，要么全不标记
+```bash
+// 例子
+e   : e '*' e # Mult
+    | e '+' e # Add
+    | INT # Int
+    ;
+生成visitE, visitMult, visitAdd, visitInt
+e   : e '*' e 
+    | e '+' e 
+    | INT 
+    ;
+只有visitE
+```
 
 2. TODO: 基于Visitor模式处理业务逻辑
