@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node src/index.ts",
     "antlr4ts": "antlr4ts -visitor -no-listener -o src/antlr -Dlanguage=TypeScript src/antlr/SqlBase.g4"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "ts-node": "^10.9.2"
   },
   "config": {
     "commitizen": {
